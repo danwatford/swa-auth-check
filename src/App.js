@@ -1,8 +1,17 @@
-import React from 'react';
+import React from "react";
+import LocalPrincipalDisplay from "./LocalPrincipalDisplay";
+import RemotePrincipalDisplay from "./RemotePrincipalDisplay";
+import SignInOut from "./SignInOut";
 
 function App() {
-  const value = 'World';
-  return <div>Hello {value}</div>;
+  return (
+    <div>
+      <h1>SWA Auth Check</h1>
+      <SignInOut />
+      <LocalPrincipalDisplay />
+      <RemotePrincipalDisplay />
+    </div>
+  );
 }
 
 export default App;
